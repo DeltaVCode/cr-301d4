@@ -29,8 +29,9 @@ function makeRandom() {
 }
 
 function displayPics(){
+  let rando;
   while(viewed.length < 6){
-    let rando = makeRandom();
+    rando = makeRandom();
     while(!viewed.includes(rando)){
       viewed.push(rando);
     }
